@@ -46,3 +46,9 @@ input {
   text-align: center;
   display: none;
 }
+
+footer {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
