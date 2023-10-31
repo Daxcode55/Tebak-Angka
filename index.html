@@ -11,7 +11,7 @@
     <div class="container">
       <button id="btn-start">Mulai Bermain</button>
       <button id="btn-bantuan">Bantuan</button>
-      <span>3</span>
+      <!-- <span id="count-helper">3</span> -->
       <div class="container-form">
         <p class="infoTxt"></p>
         <p class="messegCount"></p>
@@ -25,7 +25,11 @@
         <button id="tebak" onclick="tebakAngka()">Tebak</button>
       </div>
       <h1 class="result"></h1>
-      <!-- <span>kesempatan = 5</span> -->
+    </div>
+
+    <div class="wraper-helper">
+      <p>Durasi bantuan tersisa <span id="timer-helper"></span> detik</p>
+      <p id="result-helper"></p>
     </div>
 
     <script src="script/main.js"></script>
