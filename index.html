@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styling/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">TEBAK ANGKA</h1>
+    <div class="container">
+      <button id="btn-start">Mulai Bermain</button>
+      <div class="container-form">
+        <input
+          type="inputNum"
+          placeholder="masukan angka 0 - 99"
+          name="inputNum"
+          id="inputNum"
+          oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+        />
+        <button id="tebak" onclick="tebakAngka()">Tebak</button>
+      </div>
+      <h1 class="result"></h1>
+      <span>kesempatan = 5</span>
+    </div>
+
+    <script src="script/main.js"></script>
+  </body>
+</html>
