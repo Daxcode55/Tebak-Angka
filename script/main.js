@@ -3,7 +3,7 @@ let result = document.querySelector(".result");
 let info = document.querySelector(".infoTxt");
 let messCount = document.querySelector(".messegCount");
 let resultHlp = document.getElementById("result-helper");
-console.log(angkaRandom);
+// console.log(angkaRandom);
 
 let count = 5;
 
@@ -70,7 +70,6 @@ document.getElementById("btn-bantuan").addEventListener("click", () => {
     timer.style.color = "green";
     timer.style.fontWeight = "bolder";
 
-    console.log(second);
     if (result.innerHTML == "Benar") {
       document.querySelector(".wraper-helper").style.display = "none";
       document.getElementById("btn-bantuan").disabled = true;
@@ -95,3 +94,11 @@ function configHelper(inputValue) {
     resultHlp.innerHTML = `lebih kecil dari ${inputValue}`;
   }
 }
+
+
+// panduan 
+let containerPanduan = document.querySelector(".container-panduan");
+let wraperPanduan = document.querySelector(".wraper-panduan");
+document.getElementById("btn-panduan").addEventListener('click', () => {
+  wraperPanduan.classList.toggle("active");
+})
