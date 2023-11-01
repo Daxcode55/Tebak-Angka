@@ -20,7 +20,7 @@ function tebakAngka() {
 }
 
 function config(valueInput) {
-  if (valueInput >= 99) {
+  if (valueInput > 99) {
     info.style.display = "block";
     result.style.display = "none";
     info.style.color = "red";
